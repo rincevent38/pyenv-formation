@@ -9,7 +9,7 @@ pipeline {
   }
   stages {
     stage("install req"){
-	  agent { label 'slave_d1' }
+	  agent { label 'linux_slave' }
       steps{
         script{
 	        versionpython.each {item ->
